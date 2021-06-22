@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		A5843AED268272EA00D2B219 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843AEC268272EA00D2B219 /* AppDelegate.m */; };
 		A5843AF0268272EA00D2B219 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843AEF268272EA00D2B219 /* SceneDelegate.m */; };
-		A5843AF3268272EA00D2B219 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843AF2268272EA00D2B219 /* ViewController.m */; };
 		A5843AF6268272EA00D2B219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5843AF4268272EA00D2B219 /* Main.storyboard */; };
 		A5843AF8268272EB00D2B219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5843AF7268272EB00D2B219 /* Assets.xcassets */; };
 		A5843AFB268272EB00D2B219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5843AF9268272EB00D2B219 /* LaunchScreen.storyboard */; };
 		A5843AFE268272EB00D2B219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843AFD268272EB00D2B219 /* main.m */; };
 		A5843B08268272EB00D2B219 /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843B07268272EB00D2B219 /* TipsterTests.m */; };
 		A5843B13268272EB00D2B219 /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843B12268272EB00D2B219 /* TipsterUITests.m */; };
+		A5843B2226827C5900D2B219 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5843B2126827C5900D2B219 /* TipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,6 @@
 		A5843AEC268272EA00D2B219 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A5843AEE268272EA00D2B219 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		A5843AEF268272EA00D2B219 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		A5843AF1268272EA00D2B219 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5843AF2268272EA00D2B219 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5843AF5268272EA00D2B219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5843AF7268272EB00D2B219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5843AFA268272EB00D2B219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		A5843B0E268272EB00D2B219 /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5843B12268272EB00D2B219 /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		A5843B14268272EB00D2B219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5843B2026827C5900D2B219 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		A5843B2126827C5900D2B219 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 				A5843AEC268272EA00D2B219 /* AppDelegate.m */,
 				A5843AEE268272EA00D2B219 /* SceneDelegate.h */,
 				A5843AEF268272EA00D2B219 /* SceneDelegate.m */,
-				A5843AF1268272EA00D2B219 /* ViewController.h */,
-				A5843AF2268272EA00D2B219 /* ViewController.m */,
 				A5843AF4268272EA00D2B219 /* Main.storyboard */,
+				A5843B2026827C5900D2B219 /* TipViewController.h */,
+				A5843B2126827C5900D2B219 /* TipViewController.m */,
 				A5843AF7268272EB00D2B219 /* Assets.xcassets */,
 				A5843AF9268272EB00D2B219 /* LaunchScreen.storyboard */,
 				A5843AFC268272EB00D2B219 /* Info.plist */,
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5843AF3268272EA00D2B219 /* ViewController.m in Sources */,
 				A5843AED268272EA00D2B219 /* AppDelegate.m in Sources */,
 				A5843AFE268272EB00D2B219 /* main.m in Sources */,
+				A5843B2226827C5900D2B219 /* TipViewController.m in Sources */,
 				A5843AF0268272EA00D2B219 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,11 +444,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DKD7YXCZHA;
 				INFOPLIST_FILE = Tipster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jessicasyl35.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster35;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,11 +463,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DKD7YXCZHA;
 				INFOPLIST_FILE = Tipster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jessicasyl35.Tipster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Tipster35;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
