@@ -7,6 +7,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SettingsViewController-->
+        <scene sceneID="ZFb-1e-KZs">
+            <objects>
+                <viewController title="SettingsViewController" id="MqG-yk-B90" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cRX-2Z-xlj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Default Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bok-2X-5e0">
+                                <rect key="frame" x="104" y="145" width="206" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.31330105250000001" green="0.608593049" blue="0.7608248554" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ERt-Vd-y2k">
+                                <rect key="frame" x="67" y="234" width="279" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31330105250000001" green="0.608593049" blue="0.7608248554" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iFi-yR-iyy"/>
+                        <color key="backgroundColor" red="0.72592873940000002" green="0.95073889810000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Omo-ct-tAg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ma-Jc-yTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.68115942029" y="116.51785714285714"/>
+        </scene>
         <!--Tipster-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -89,7 +124,13 @@
                             <outletCollection property="gestureRecognizers" destination="79D-MF-fex" appends="YES" id="GMv-yg-WnB"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tipster" id="2NK-eW-f5f"/>
+                    <navigationItem key="navigationItem" title="Tipster" id="2NK-eW-f5f">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="ELg-wx-Vea">
+                            <connections>
+                                <segue destination="MqG-yk-B90" kind="show" id="ifH-0K-Dgd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billAmountField" destination="1h5-DJ-oNG" id="peY-FE-KME"/>
                         <outlet property="labelsContainerView" destination="VEF-Qp-Jig" id="hrN-db-bDj"/>
