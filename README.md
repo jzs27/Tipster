@@ -15,8 +15,8 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Settings page to change the default tip percentage.
-* [ ] UI animations
+*  Settings page to change the default tip percentage.
+* UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
@@ -25,13 +25,12 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 * Color was added to make app more visually pleasing.
-* A slide up and slide down animation was added. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/Kxfgmx5.gif)
+![](https://i.imgur.com/Biqb5R9.gif)
 
 
 GIF created with [Kap](https://getkap.co/).
