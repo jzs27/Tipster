@@ -31,9 +31,13 @@ bool isHidden = false;
     [self.view endEditing:true];
 }
 - (IBAction)updateLabels:(id)sender {
-//    if (self.billAmountField.text.length ==0){
-//        [self hideLabels];
-//    }
+    if (self.billAmountField.text.length ==0 && !isHidden){
+        [self hideLabels];
+    }
+    if (self.billAmountField.text.length !=0 && isHidden){
+        [self showLabels];
+    }
+
     double tipPercentages[]={0.15,0.2,0.25};
     double tipPecentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     
@@ -57,9 +61,30 @@ bool isHidden = false;
         self.labelsContainerView.frame=labelsFrame;
 
         self.labelsContainerView.alpha=0;
+        isHidden=!isHidden;
     }];
     
 }
+
+- (void)showLabels{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect billFrame = self.billAmountField.frame;
+        billFrame.origin.y -= 200;
+
+        self.billAmountField.frame=billFrame;
+
+        CGRect labelsFrame = self.labelsContainerView.frame;
+        labelsFrame.origin.y -=200;
+        self.labelsContainerView.frame=labelsFrame;
+
+        self.labelsContainerView.alpha=1;
+        isHidden=!isHidden;
+        
+    }];
+    
+}
+
 
 /*
 #pragma mark - Navigation
